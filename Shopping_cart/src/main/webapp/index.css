@@ -1,0 +1,12 @@
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+    font-weight: 500;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width : 600px;
+    height : 400px;
+    object-fit : cover;
+  }

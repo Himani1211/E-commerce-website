@@ -99,4 +99,24 @@
     <servlet-name>CancelOrderServlet</servlet-name>
     <url-pattern>/CancelOrderServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ContactUsServlet</display-name>
+    <servlet-name>ContactUsServlet</servlet-name>
+    <servlet-class>servlets.ContactUsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactUsServlet</servlet-name>
+    <url-pattern>/ContactUsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SearchProductServlet</display-name>
+    <servlet-name>SearchProductServlet</servlet-name>
+    <servlet-class>servlets.SearchProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchProductServlet</servlet-name>
+    <url-pattern>/SearchProductServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

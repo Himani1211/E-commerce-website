@@ -20,6 +20,13 @@
 
 					<li class="nav-item"><a class="nav-link" href="cart.jsp">Cart<span class="badge badge-danger">${cart_list.size() }</span></a>
 					</li>
+					
+					
+					
+					<%--<li class="nav-item"><a class="nav-link" href="aboutUs.jsp">About Us</a></li> --%>
+					
+       
+                
 					<% 
 					User authobj = (User) request.getSession().getAttribute("auth");
 					if(authobj != null){%>

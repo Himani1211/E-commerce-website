@@ -126,5 +126,35 @@ public class ProductDao {
 		
 		return row;
 	}
+
+	public List<Product> getSearchProducts(String productname) {
+		//System.out.print("product to be searched : " + productname);
+		
+		List<Product> s_product = new ArrayList<Product>();
+		try {
+			query = "Select * from ecommerce_website.product where product_name like ?";
+			stmnt = this.connection.prepareStatement(query);
+			stmnt.setString(1, "%" + productname + "%");
+			resultset = stmnt.executeQuery();
+			
+			while(resultset.next()) {
+				Product row = new Product();
+				row.setPid(resultset.getInt("product_id"));
+				row.setPname(resultset.getString("product_name"));
+				row.setPcategory(resultset.getString("p_category"));
+				row.setPrice(resultset.getDouble("p_price"));
+				row.setImg(resultset.getString("p_image"));
+				
+				s_product.add(row);
+			}
+			
+			
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	
+		return s_product;
+	}
 	
 }

@@ -58,7 +58,7 @@ public class OrderNowServlet extends HttpServlet {
 				order.setDate(date);
 				
 				OrderDao orderDao = new OrderDao(DBConnection.getconnection());
-				out.print("data is going to br inserted in database");
+				out.print("data is going to be inserted in database");
 				boolean result = orderDao.insertOrder(order);
 				out.print("result : " + result);
 				if(result) {

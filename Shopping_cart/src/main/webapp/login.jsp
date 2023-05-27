@@ -41,18 +41,20 @@
 						<label>Email Address</label><input type="email"class="form-control" name="login-email" 
 						placeholder="Enter your Email" required>
 					</div>
-
-
 					<div class="form-group">
 						<label>Password</label><input type="password" class="form-control"
 							name="login-password" placeholder="********" required>
 					</div>
-
-
 					<div class="text-center">
 						<button type="submit" class="btn btn-success">Login</button>
 					</div>
-
+					
+				</form>
+				
+				<form action="registration.jsp" method="post">
+    				<div class="text-right">
+        				<button type="submit" class="btn btn-warning">New User</button>
+    				</div>
 				</form>
 			</div>
 		</div>

@@ -6,8 +6,6 @@ import javax.crypto.SecretKey;
 public class EncryptionDecryption {  
     static Cipher cipher; 
     
-
-
     public static void main(String[] args) throws Exception {
         /* 
          create key 
@@ -19,23 +17,7 @@ public class EncryptionDecryption {
         keyGenerator.init(128); // block size is 128bits
         SecretKey secretKey = keyGenerator.generateKey();
         
-        /*
-          Cipher Info
-          Algorithm : for the encryption of electronic data
-          mode of operation : to avoid repeated blocks encrypt to the same values.
-          padding: ensuring messages are the proper length necessary for certain ciphers 
-          mode/padding are not used with stream cyphers.  
-         */
-//        cipher = Cipher.getInstance("AES"); //SunJCE provider AES algorithm, mode(optional) and padding schema(optional)  
-
-//        String plainText = "AES Symmetric Encryption Decryption";
-//        System.out.println("Plain Text Before Encryption: " + plainText);
-//
-//        String encryptedText = encrypt(plainText, secretKey);
-//        System.out.println("Encrypted Text After Encryption: " + encryptedText);
-//
-//        String decryptedText = decrypt(encryptedText, secretKey);
-//        System.out.println("Decrypted Text After Decryption: " + decryptedText);
+       
     }
 
 

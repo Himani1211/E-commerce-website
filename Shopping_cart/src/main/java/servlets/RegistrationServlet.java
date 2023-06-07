@@ -51,6 +51,8 @@ public class RegistrationServlet extends HttpServlet {
 				}
 				else {
 					System.out.println("data entered correctly");
+					User user = userdao.userLogin(email, password);
+					request.getSession().setAttribute("auth" , user);
 					response.sendRedirect("index.jsp");
 				}
 				

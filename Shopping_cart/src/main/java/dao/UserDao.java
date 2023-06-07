@@ -95,6 +95,7 @@ public class UserDao {
     public static String encryptPassword(String plaintext) throws Exception {
         EncryptionDecryption obj = new EncryptionDecryption();
         String encryptPassword = obj.encrypt(plaintext, secretKey);
+        System.out.println("secret key in encrypt method :" + secretKey);
         return encryptPassword;
     }
 
